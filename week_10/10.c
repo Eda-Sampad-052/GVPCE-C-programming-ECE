@@ -12,12 +12,12 @@ int main() {
     printf("Value: %d\n", value);
     printf("Pointer: %p, Value: %d\n", (void *)ptr, *ptr);
     printf("Pointer to Pointer: %p, Value: %d\n\n", (void *)ptr_to_ptr, **ptr_to_ptr);
-    int num1, num2, num3;
-    int *arr_of_ptrs[] = {&num1, &num2, &num3};
+    int n1, n2, n3;
+    int *arr_of_ptrs[] = {&n1, &n2, &n3};
   
 
     printf("Enter three integers: ");
-    scanf("%d %d %d", &num1, &num2, &num3);
+    scanf("%d %d %d", &n1, &n2, &n3);
     for (int i = 0; i < 3; ++i) {
         printf("Element %d: %d\n", i + 1, *arr_of_ptrs[i]);
     }
